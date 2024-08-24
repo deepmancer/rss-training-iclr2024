@@ -1,0 +1,37 @@
+
+\headerbox{\bf\color{title_color}Preliminaries}{name=pre,column=0,below=contribution,span=2}{
+    \textdecorator{
+        \begin{customdef}[Wasserstein Distance]{A.1}
+            Given $P$ and $Q$ supported on $\mathcal{X}$, and a non-negative, lower semi-continuous cost function $c:\mathcal{X}^2\to\mathbb{R}_{+}$ satisfying $c(\boldsymbol{X},\boldsymbol{X}) = 0$ for all $\boldsymbol{X}\in \mathcal{X}$, is defined as: 
+            
+            \eqdecorator[\eqfontsize][11][-1.][-1]{\begin{align*}
+            \mathcal{W}_c\left(P,Q\right) = \inf_{\mu \in \Gamma\left(\mathcal{X}^2\right)} \mathbb{E}_{\boldsymbol{X},\boldsymbol{X}^{\prime} \sim \mu}\left[c(\boldsymbol{X},\boldsymbol{X}^{\prime})\right]             ~~\mathrm{s.t.~}~~\mu\left(\boldsymbol{X},\cdot\right)=P~,~\mu\left(\cdot,\boldsymbol{X}'\right)=Q.\end{align*}}
+            \end{customdef}
+            \vspace{1.2em}
+            \begin{customdef}[$\epsilon$-neighborhood of a Distribution $P$]{A.2}
+            \eqdecorator[\eqfontsize][11][0][-0.5]{\begin{equation}\label{eq:WassersteinBall}
+            \mathcal{B}^{c}_{\epsilon}(P) = \{Q: \mathcal{W}_c(P, Q) \leq \epsilon\}.
+            \end{equation}
+            }
+        \end{customdef}
+    }
+    \textdecorator[\txtfontsize][13][0][0]{
+        \vspace{1.5em}
+        \setdefinitioncolor{title_color}
+            \begin{customdef}[\textbf{\color{title_color}Distributionally Robust Learning($\boldsymbol{\mathrm{DRL}}$)}]{1.1} In DRL, the {\it {learner}} attempts to find a classifier with a small robust risk, denoted as $R^{\mathrm{robust}}\left(\theta,P\right)$, where:
+            \eqdecorator[\eqfontsize][11][0][-0.5]{\begin{equation}
+            \label{eq:WassersteinBall}
+                R^{\mathrm{robust}}_{\epsilon, c}\left(\theta,P\right) = \sup_{P^{\prime} \in \mathcal{B}_{\epsilon}^c\left(P\right)}{R\left(\theta, P^{\prime}\right)}; \; \forall \theta \in \Theta \; \& \; \epsilon\ge0.
+            \end{equation}}
+            Therefore, DRL solves the following minimax optimization problem:
+            \eqdecorator[\eqfontsize][11][-0.5][0]{\begin{equation}
+            \label{eq:originalMinimax}
+                \hat{\theta}^{\mathrm{DRL}}_{\epsilon, c}\left(S\right) 
+                \triangleq 
+                \argmin_{\theta \in \Theta}~{R^{\mathrm{robust}}_{\epsilon, c}\left(\theta, \hat{P}^m_S\right)}.
+            \end{equation}}
+        \end{customdef}
+        \setdefinitioncolor{bblack}
+        \vspace{0.2em}
+    }
+}

@@ -1,0 +1,105 @@
+\headerbox{\bf\color{title_color}Experiments \& Results}{name=exp,column=4, span=2}{
+    \begin{minipage}[c]{\textwidth}
+    {\fontsize{\txtfontsize}{10} \selectfont \textbf{\color{title_color} Simulated Isotropic GMM Data (non-robust setup):} \vspace{0.25em}}{\fontsize{\txtfontsize}{9} \selectfont
+    \begin{itemize}
+         \item \textbf{Data:} $d=200$, $\boldsymbol{\mu_1} = \boldsymbol{\mu_0}+\alpha.\boldsymbol{v}$ where $ \boldsymbol{v} \text{ and } \boldsymbol{\mu_0}$ are random normalized vectors.
+        \item  \textbf{Model:} $h(x ; w) = w^Tx$, with \eqdecorator[\eqfontsize][10][0.1][0]{$l_{\gamma}(Y, X, f(x)) = \sum_{i=1}^{|X|} \min(1, \max\left(0, 1-\gamma.Y_i.f(X_i)\right)).$}
+    \end{itemize}
+    }
+    
+    \begin{center}{\fontsize{\txtfontsize}{8} \selectfont \setlength{\tabcolsep}{10pt} \renewcommand{\arraystretch}{0.55} \begin{tabular}{cclccclc}
+        \toprule
+        \multicolumn{4}{c}{Same Distribution ($\alpha = 0$)} & \multicolumn{4}{c}{Different Distribution ($\alpha = 0.5\cdot ||\boldsymbol{\mu_0}||_2$)} \\
+        \cmidrule(lr){1-4} \cmidrule(lr){5-8}
+        m & Acc & n & Acc & m & Acc & n & Acc \\
+        \midrule 
+                &      & 10      & 0.63          &     &      & 10      & 0.61  \\
+          10    & 0.59 & 100     & 0.66          & 10  & 0.59 & 100     & 0.65  \\
+                &      & 1,000   & 0.79          &     &      & 1,000   & 0.78  \\
+                &      & 10,000  & \textbf{0.82} &     &      & 10,000  & \textbf{0.81}  \\
+        \midrule
+                &      & 20      & 0.64          &     &      & 20      & 0.65  \\
+          20    & 0.62 & 200     & 0.69          & 20  & 0.62 & 200     & 0.65  \\
+                &      & 2,000   & 0.80          &     &      & 2,000   & 0.79  \\
+                &      & 10,000  & \textbf{0.82} &     &      & 10,000  & \textbf{0.80}  \\
+        \midrule 
+                &      & 40      & 0.65          &     &      & 40      & 0.65  \\
+          40    & 0.65 & 400     & 0.71          & 40  & 0.65 & 400     & 0.73  \\
+                &      & 4,000   & 0.81          &     &      & 4,000   & 0.78  \\
+                &      & 10,000  & \textbf{0.82} &     &      & 10,000  & \textbf{0.80}  \\
+        \midrule
+         10,000 & \textbf{0.83}   & -       & -  & 10,000 & \textbf{0.83} & - & - \\  
+        \bottomrule
+      \end{tabular}
+    }
+  \end{center}
+
+  {\fontsize{\txtfontsize}{10} \selectfont \textbf{\color{title_color} Histopathology Images (robust setup):}}
+  \vspace{0.3em}
+    {\fontsize{\txtfontsize}{11} \selectfont
+    \begin{itemize}
+        \item \textbf{Data:} NCT-CRC-HE-100K (colorectal cancer) \& PatchCamelyon (lymph node).
+    
+    \end{itemize}
+    }
+    \vspace{0.3em}
+    \begin{minipage}[c]{\textwidth}
+     \centering
+     \includegraphics[width=0.95\linewidth]{images/histo_exp.png}
+     \captionof{figure}{(\textbf{Left}) \textit{Same Distribution Setting}. (\textbf{Right}) \textit{Different Distribution Setting}.}
+   \end{minipage}
+   % \begin{minipage}[c]{\textwidth}
+   %   \centering
+   %   \includegraphics[width=\linewidth]{images/PCam.png}
+   %   \caption{Interpolation for Data 2}
+   % \end{minipage}
+    
+    % \vspace{.5em}
+    \begin{center}{\fontsize{\txtfontsize}{8} \selectfont \setlength{\tabcolsep}{4pt} \renewcommand{\arraystretch}{0.55}
+  \begin{tabular}{cclccclc}
+    \toprule
+    \multicolumn{4}{c}{Same distribution} & \multicolumn{4}{c}{Different distribution} \\
+    \cmidrule(lr){1-4} \cmidrule(lr){5-8}
+    Labeled size & Acc & Unlabeled size & Acc & Labeled size & Acc & Unlabeled size & Acc \\
+    \midrule 
+            &      & 200    & 0.71   &     &      & 100   & 0.78  \\
+      48    & 0.65 & 700    & 0.80   & 25  & 0.78 & 400   & 0.79  \\
+            &      & 2,000  & \textbf{0.82} & &   & 2,000 & \textbf{0.81} \\    
+    \midrule
+            &      & 500    & 0.78   &     &      & 200   & 0.82  \\
+     240    & 0.77 & 1,200  & 0.82   & 50  & 0.82 & 700   & 0.86  \\
+            &      & 4,000  & \textbf{0.83} & &   & 3,000 & \textbf{0.87}  \\
+    \midrule 
+            &      & 3,000   & 0.87  &     &      & 600   & 0.88  \\
+    1040    & 0.83 & 10,000  & 0.89  & 300 & 0.87 & 2,000 & 0.89  \\
+            &      & 20,000  & \textbf{0.91} & &  & 8,000 & \textbf{0.90}  \\
+    \midrule
+     50,000 & \textbf{0.916}  & - & - & 32,000 & \textbf{0.94} & - & - \\  
+    \bottomrule
+  \end{tabular}
+    }
+  \end{center}
+    
+  \end{minipage}
+\vspace{2em}
+    \begin{minipage}[t]{0.35\linewidth} % Increased the left minipage width slightly
+\end{minipage}
+\hfill % This might be adjusted or removed depending on your exact spacing needs
+\begin{minipage}[t]{0.35\linewidth} % Decreased to adjust the total width
+    \begin{minipage}{0.48\linewidth}
+    \vspace{1em}
+        \begin{center}
+        \textbf{Project Github}: \\
+        \vspace{0.5em}\textbf{Code} \& \textbf{Dataset} \& \textbf{Model}
+        \end{center}
+    \end{minipage}
+     % Adjust or remove depending on spacing and alignment needs
+    \begin{minipage}{0.3\linewidth}
+    \vspace{1em}
+        \begin{center}
+            \includegraphics[width=\linewidth]{logo/paper_qrcode_git.png}
+        \end{center}
+    \end{minipage}
+\end{minipage}
+
+}

@@ -1,0 +1,46 @@
+% Font Encoding and Fonts
+\usepackage[T1]{fontenc}
+\usepackage{times} % Consider replacing with newtxtext/newtxmath if needed
+\usepackage{ae} % Might be unnecessary if using modern font packages
+
+% Math Packages
+\usepackage{amsmath, amssymb} % Essential for \argmin and other math operations
+\usepackage{amsfonts}
+\usepackage{amsthm} % For theorem environments
+
+% Graphics and Figures
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{graphbox}
+
+% Table Enhancements
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{threeparttable}
+\usepackage{colortbl}
+
+% Algorithms
+\usepackage[vlined]{algorithm2e}
+
+% Citations
+\usepackage{natbib}
+\usepackage{empheq}
+
+% Miscellaneous
+\usepackage{calc}
+\usepackage{relsize}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{enumitem} % Customizable list environments
+\usepackage{etoolbox} % For conditional checks and programming
+
+% URL and Hyperlinks (Load as the last package)
+\usepackage{url}
+\usepackage[pagebackref=true,breaklinks=true,colorlinks=true,
+  bookmarks=false,linkcolor={red!50!black},urlcolor={magenta},
+  citecolor={green!50!black}]{hyperref} 
+
+% Color support (Loaded after colortbl and before hyperref)
+\usepackage{xcolor}

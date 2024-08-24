@@ -1,0 +1,29 @@
+\headerbox{\textbf{\color{title_color} Problem Setup}}{name=setup, column=0, below=pre, span=2}{
+    \textdecorator[\txtfontsize][13][0][0]{
+        \textbf{\color{title_color} Notations \& Definitions:}
+        \begin{itemize}
+            \item Let $\mathcal{X} \subseteq \mathbb{R}^d$, $y \in \{\pm 1\}$. The joint feature-label distribution of labeled data is denoted as $P_0 \sim \mathcal{X} \times \{\pm 1\}$.
+            \item $P_1$ is a shifted version of $P_0$, where their marginal distributions on $\mathcal{X}$ are shifted by $\mathcal{W}_c(P_{0,X}, P_{1,X}) = \alpha$ with $\alpha > 0$, and no assumptions are made on $P_1(y \mid \boldsymbol{X})$.
+            \item \textbf{Labeled Data}: $S_0 = \{(\boldsymbol{X}_i, y_i)\}_{i=1}^{m} \sim P_0^{m}$, where $P_{0}(y = 1) = \frac{1}{2}$.
+            \item \textbf{Out-of-domain Unlabeled Data}: $S_1 = \{\boldsymbol{X}^\prime_i\}_{i=1}^{n} \sim P_{1,X}^{n}$.
+        \end{itemize}
+
+        \vspace{0.2em}
+        \textbf{\color{title_color} Isotropic GMM Setup:}
+        \begin{itemize}
+            \item \textbf{Loss Function:} Without loss of generality, let $\ell(\boldsymbol{X}, y; \theta) = \boldsymbol{1}(y\langle\theta, \boldsymbol{X}\rangle \geq 0)$.
+            \item \eqdecorator[\eqfontsize][11][0][0]{
+                $P_0(\boldsymbol{X} \mid y) = \mathcal{N}(y\boldsymbol{\mu}_0, \sigma_0^2 \mI) \quad \text{for some } \sigma_0 \geq 0, \; \boldsymbol{\mu}_0 \in \mathbb{R}^d.$
+            }
+            \item \eqdecorator[\eqfontsize][11][0][0]{
+                $P_{1,X} = \frac{1}{2} \sum_{u=\pm1} \mathcal{N}(u\boldsymbol{\mu}_1, \sigma_1^2 \mI),$
+            }
+        \end{itemize}
+
+        \vspace{0.2em}
+        \noindent
+        {\fontsize{\eqfontsize}{10}\selectfont 
+            where $\|\boldsymbol{\mu}_0 - \boldsymbol{\mu}_1\| \leq \mathcal{O}(\alpha)$ and $\vert\sigma_1 - \sigma_0\vert \leq \mathcal{O}(\alpha)$ since $\mathcal{W}_c(P_{0,X}, P_{1,X}) = \alpha$.
+        }
+    }
+}

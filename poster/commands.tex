@@ -1,0 +1,71 @@
+\setstretch{1.1}
+
+\newcommand{\txtfontsize}{10pt}
+\newcommand{\eqfontsize}{9pt}
+\newcommand\Tstrut{\rule{0pt}{2.2ex}} 
+\newcommand\Bstrut{\rule[-1ex]{0pt}{0pt}} 
+\newcommand{\TBstrut}{\Tstrut\Bstrut} 
+\newcommand{\padl}{\hspace{1pt}}
+\newcommand{\padr}{\hspace{1pt}}
+
+\definecolor{bblack}{HTML}{000000}
+\definecolor{wwhite}{HTML}{ffffff}
+\definecolor{title_color}{HTML}{080dbf}
+\definecolor{filling_color}{HTML}{b9dded}
+\definecolor{method_title_color}{HTML}{b9dded}
+\definecolor{method_filling_color}{HTML}{b9dded}
+\definecolor{main_def_color}{HTML}{DC143C}
+
+\newtheoremstyle{customtheorem}{-1em}{-1em}{\itshape}{}{\bfseries}{.}{.5em}{}
+\newtheoremstyle{customdefinition}{-1em}{-1em}{}{}{\bfseries\color{\currentcolor}}{.}{.5em}{}
+
+\theoremstyle{customtheorem}
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{customthm}[2][]
+  {\renewcommand\theinnercustomthm{#2}\innercustomthm[#1]}
+  {\endinnercustomthm}
+
+\theoremstyle{customdefinition}
+\newtheorem{innercustomdef}{Definition}
+\newcommand{\setdefinitioncolor}[1]{\def\currentcolor{#1}}
+\setdefinitioncolor{black}
+
+\newenvironment{customdef}[2][]
+  {\renewcommand\theinnercustomdef{#2}\innercustomdef[#1]}
+  {\endinnercustomdef}
+
+\NewDocumentCommand{\textdecorator}{O{\txtfontsize} O{11} O{0} O{0} +m}{%
+  \vspace{#3em}
+  {\fontsize{#1}{#2}\selectfont
+  #5
+  \par}%
+  \vspace{#4em}
+}
+
+\NewDocumentCommand{\eqdecorator}{O{\eqfontsize} O{11} O{-.5} O{-.5} +m}{%
+  \vspace{#3em}
+  {\fontsize{#1}{#2}\selectfont
+  #5
+  \par}%
+  \vspace{#4em}
+}
+
+\setlist[itemize]{leftmargin=*,nosep}
+\setlist[enumerate]{leftmargin=2.5em,nosep}
+\setlength{\columnsep}{0.7em}
+\setlength{\columnseprule}{0mm}
+
+\renewcommand{\rmdefault}{ptm} % Arial
+\renewcommand{\sfdefault}{ptm} % Arial
+
+\newcommand{\viewdir}{\boldsymbol{d}}
+\newcommand{\lightloc}{\boldsymbol{p}_l}
+\newcommand{\lightint}{L_e}
+\newcommand{\ray}{\boldsymbol{r}}
+\newcommand{\pixelcolor}{\boldsymbol{C}}
+\newcommand{\loss}{\mathcal{L}}
+\newcommand{\point}{\boldsymbol{x}}
+\newcommand{\lin}{L_{int}}
+\newcommand{\din}{\boldsymbol{w}_i}
+\newcommand{\normal}{\boldsymbol{n}}
+\newcommand{\brdf}{f_m}

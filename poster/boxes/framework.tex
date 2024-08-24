@@ -1,0 +1,41 @@
+\headerbox{\bf\color{white}Framework: Robust Self-Supervised Training}{name=method,column=2, span=2, row=0, headerFontColor=cyan!10!white, borderColor=title_color, boxColorOne=white, headershade=plain,
+  headerColorOne=blue,  background=none, textborder=rectangle,headerborder=closed, boxheaderheight=2.5em,
+linewidth=1.25pt}{
+    \vspace{0.5em}
+    \textdecorator[\txtfontsize][12][0.][-0.5]{
+        \textbf{\color{title_color}Robust Self-Supervised (RSS) Training:}
+        Consider a cost function $c$ and a parameter $\gamma\ge0$. We define the {\it {robust loss}} 
+        $\phi_{\gamma}:\mathcal{X}\times\left\{\pm1\right\}\times\Theta\rightarrow\mathbb{R}$ by:
+        \eqdecorator[11][13][-0.5][-0.5]{
+            \begin{align}
+                \phi_{\gamma}\left(\boldsymbol{X},y;\theta\right)
+                \triangleq
+                \sup_{\boldsymbol{Z}\in\mathcal{X}} ~
+                \ell\left(\boldsymbol{Z},y;\theta\right)
+                -\gamma c\left(\boldsymbol{Z},\boldsymbol{X}\right).
+            \end{align}
+        }
+        For a given set of parameters $\gamma,\gamma',\lambda\in\mathbb{R}_{\ge0}$: $\hat{\theta}^{\mathrm{RSS}}$ estimator is defined as:
+        \vspace{-.5em}
+        \begin{empheq}[box={\fboxsep=6pt\fboxrule=0.5pt\fcolorbox{white}{white}}]{align}
+            \hat{\theta}^{\mathrm{RSS}}
+            \triangleq
+            \argmin_{\theta\in\Theta}~\left\{
+                \frac{1}{m}\sum_{i=1}^{m}
+                \phi_{\gamma}\left(\boldsymbol{X}_i,y_i;\theta\right)
+                +
+                \frac{\lambda}{n}\sum_{j=1}^{n}
+                \phi_{\gamma'}\left(\boldsymbol{X}'_j,
+                h_{\theta}\left(\boldsymbol{X}'_j\right)
+                ;\theta\right)
+            \right\}.
+            \label{RSSEstimator}
+        \end{empheq}
+    }
+    \begin{minipage}[c]{\textwidth}
+        \vspace{1.5em}
+        \centering
+        \includegraphics[width=0.95\linewidth]{images/pipeline.png}
+        \captionof{figure}{Overview of Robust Self-Supervised (RSS) Training}
+    \end{minipage}
+}

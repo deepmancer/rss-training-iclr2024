@@ -1,0 +1,47 @@
+\headerbox{\bf\color{title_color}Generalization Bounds (GMM)}{name=gb,column=2, below=method, span=2}{
+    \begin{minipage}[c]{\textwidth}
+    \textdecorator{
+        {\fontsize{\txtfontsize}{10}\selectfont
+        \vspace{0.3em}
+        \begin{customthm}[Non-asymptotic Bound for Robust Learning]{4.1}
+        
+        \eqdecorator[10][11][0][-0.5]{
+            \begin{align*}
+            \label{eq:Thm1-main}
+            &{\mathbb{E}_{P_0}\left[\phi_{\gamma}\left(\boldsymbol{X},y; \hat{\theta}^{\mathrm{RSS}}\right)\right]}
+            \leq~   
+            \min_{\theta\in\Theta}~
+            {\mathbb{E}_{P_0}\left[\phi_{\gamma}\left(\boldsymbol{X},y; \theta\right)\right]} 
+            \\ 
+            &
+            +~\mathcal{O}\left(\gamma\sqrt{\frac{2d}{m}\left(\alpha\scalebox{0.92}{$\left(\|\boldsymbol{\mu}_0\|_2^2+\sigma_0^2\right)$} + \sqrt{\frac{2d}{2n+m}} + \sqrt{\frac{2\log\left({{1}/{\delta}}\right)}{2n+m}}\right)} + \sqrt{\frac{2\log\left({1/\delta}\right)}{m}}\right).
+            \nonumber 
+            \end{align*}
+        }
+        \end{customthm}    
+
+        \begin{customthm}[Non-asymptotic Bound for Non-robust Learning]{4.2}
+        \label{NonRobustLossGeneralization}
+        \eqdecorator[10][11][-0.5][-0.5]{
+        \begin{align*}
+                &{R\left(\hat{\theta}^{\mathrm{RSS}},P\right)} -{\min_{\theta\in\Theta}R\left(\theta,P\right)}
+                \\
+                &
+                \leq \mathcal{O}\left(\scalebox{0.935}{$\frac{e^{\frac{-\|\boldsymbol{\mu}_0\|_2^2}{4\sigma_0^2}}}{\sqrt{2\sigma_0\sqrt{2\pi}}}$}\left(\scalebox{0.935}{$\left(\|\boldsymbol{\mu}_1\|_2^2+\sigma_1^2\right)$}\frac{2d\alpha}{m} + \frac{4d}{m}\sqrt{\frac{2d + 2\log{\frac{1}{\delta}}}{2n+m}}\right)^{1/4}  + \sqrt{\frac{2\log{\frac{1}{\delta}}}{m}}\right).
+                \nonumber
+            \end{align*}
+        }
+        \end{customthm}
+        \vspace{0.3 em}
+        \textdecorator[\txtfontsize][10][1.][0.2]{
+        \textbf{\color{title_color}Corollary (Following Theorem 4.2):}
+        \vspace{0.3em}
+        \begin{itemize}
+            \item The $\hat{\theta}^{\mathrm{RSS}}$ estimator outperforms ERM when $\alpha \leq O\left(\frac{d}{m}\right)$, $n \geq \Omega\left(\frac{m^2}{d}\right)$.
+            \item Sample complexity becomes independent of $d$ if: $\alpha \leq O(d^{-1})$, $n \geq \Omega(d^3)$.
+            \item  When $\alpha=0$ (no perturbation), $m=O(\frac{d}{\epsilon}) \text{, and } n=O(\frac{d}{\epsilon^6})$, the generalization bound improves compared to having access to $m=O(\frac{d}{\epsilon^2})$ labeled data points.
+        \end{itemize}
+    }
+    }}
+    \end{minipage}
+}

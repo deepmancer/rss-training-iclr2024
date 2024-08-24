@@ -1,0 +1,15 @@
+\headerbox{\bfseries\color{title_color} Contribution}{name=contribution, column=0, below=motivation, span=2}{
+    \textdecorator[\txtfontsize][13][0][0]{
+        \begin{minipage}[c]{\textwidth}
+            We propose a polynomial-time framework that leverages both labeled and slightly out-of-domain unlabeled data. Our framework guarantees improved generalization under the \textit{cluster assumption} of the true data distribution. In the well-studied setting of the two-component Gaussian Mixture Model (GMM) for classification, with $m$ labeled and $n$ unlabeled data points, our theoretical findings demonstrate:
+            \textdecorator[\txtfontsize][12][.5][0]{
+                \begin{itemize}
+                    \item \textbf{Non-asymptotic bounds} for both robust and non-robust learning.
+                    \item \textbf{Enhanced generalization} over ERM techniques when $n \geq \Omega(m^2/d)$.
+                    \item \textbf{Dimension-independent} sample complexity under well-defined conditions.
+                    \item \textbf{Improved sample complexity} from $O(d/\epsilon^2)$ to $O(d/\epsilon)$ when $n = O(d/\epsilon^6)$.
+                \end{itemize}
+            }
+        \end{minipage}
+    }
+}
