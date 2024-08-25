@@ -36,7 +36,7 @@ However, using our method on both isotropic and non-isotropic Gaussian mixture m
 
 Our results underscore two significant insights:
 
-1. Out-of-domain samples, even when unlabeled, can be harnessed to narrow the generalization gap, provided that the true data distribution adheres to a form of the "cluster assumption."
+1. Out-of-domain samples, even when unlabeled, can be harnessed to narrow the generalization gap, provided that the true data distribution adheres to a form of the <em>"cluster assumption"</em>.
 2. The semi-supervised learning paradigm can be regarded as a special case of our framework when there are no distributional shifts.
 
 We validate our claims through experiments conducted on a variety of synthetic and real-world datasets.
