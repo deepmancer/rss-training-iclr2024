@@ -70,7 +70,7 @@ We propose a polynomial-time framework that leverages both labeled and slightly 
 ## Conference Poster
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/poster.png" alt="" style="max-width: 100%;">
+  <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/poster.png" style="max-width: 100%;">
 </div>
 
 ---
