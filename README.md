@@ -5,7 +5,7 @@
 [![presentation](https://img.shields.io/badge/Presentation-ICLR%202024-FFA500)](https://iclr.cc/virtual/2024/poster/19202)
 [![openreview](https://img.shields.io/badge/OpenReview-Discussion-B762C1)](https://openreview.net/forum?id=Bo6GpQ3B9a)
 
-> **Out-Of-Domain Unlabeled Data Improves Generalization**](https://arxiv.org/abs/2310.00027) <br>
+> [**Out-Of-Domain Unlabeled Data Improves Generalization**](https://arxiv.org/abs/2310.00027) <br>
 > Seyed Amir Hossein Saberi, Amir Najafi, Alireza Heidari, Mohammad Hosein Movasaghinia, Abolfazl Motahari, Babak HosseinKhalaj
 <br>**Sharif University of Technology**<br>
 
