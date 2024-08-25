@@ -45,7 +45,8 @@ We validate our claims through experiments conducted on a variety of synthetic a
 
 ## Method: Robust Self Supervised (RSS) Training
 
-The **Robust Self-Supervised (RSS) Training framework**  enhances the ERM loss function with a robust regularization term, leveraging out-of-domain unlabeled data to improve classifier performance by steering the model away from crowded and dense areas.
+The **Robust Self-Supervised (RSS) Training framework**  enhances the ERM loss function with a robust regularization term. This extra loss term leverages out-of-domain unlabeled data only, guiding the classifier away from crowded, dense regions to improve overall performance and robustness.
+
 
 
 <div align="center">
