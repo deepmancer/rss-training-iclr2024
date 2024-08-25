@@ -76,3 +76,10 @@ year={2024},
 url={https://openreview.net/forum?id=Bo6GpQ3B9a}
 }
 ```
+
+---
+
+## 📝 License
+
+This project is licensed under the Apache 2.0 License. For detailed information, please refer to the [LICENSE](LICENSE) file.
+
