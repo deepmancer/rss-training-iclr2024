@@ -67,17 +67,6 @@ We propose a polynomial-time framework that leverages both labeled and slightly 
 
 ---
 
-## ✨ Method: Robust Self Supervised (RSS) Training
-
-The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss function by incorporating a robust regularization term. This additional term exclusively leverages out-of-domain unlabeled data, guiding the classifier away from crowded, dense regions to improve overall performance and robustness.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/images/pipeline.png" alt="Overview of the RSS Training Framework" style="max-width: 100%;">
-  <p><strong>Overview of the RSS Training Framework</strong></p>
-</div>
-
----
-
 ## Conference Poster
 
 <div align="center">
@@ -86,7 +75,6 @@ The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss fu
 
 ---
 
----
 
 ## 📚 Citation
 
