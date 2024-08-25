@@ -16,10 +16,8 @@
 
 🚀 Official repository of our **ICLR 2024 Spotlight** paper, [**"Out-Of-Domain Unlabeled Data Improves Generalization"**](https://arxiv.org/abs/2310.00027).
 
-## 📝 Abstract
-
 <details>
-    <summary>Click to expand</summary>
+    <summary>📝 Click for Abstract</summary>
 
 We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
 
