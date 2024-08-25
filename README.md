@@ -16,9 +16,6 @@
 
 Official implementation
 
-
-<details>
-    <summary>Click for Abstract</summary>
 <details>
     <summary>Click for Abstract</summary>
 
