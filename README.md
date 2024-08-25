@@ -40,7 +40,7 @@ The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss fu
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/images/pipeline.png" alt="Overview of the RSS Training Framework" style="max-width: 100%;">
-  <p><strong>Figure 1: Overview of the RSS Training Framework</strong></p>
+  <p><strong>Overview of the RSS Training Framework</strong></p>
 </div>
 
 ---
@@ -60,7 +60,7 @@ Our work introduces a polynomial-time framework that effectively integrates both
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/poster.png" style="max-width: 100%;">
-  <p><strong>Figure 2: ICLR 2024 Conference Poster</strong></p>
+  <p><strong>ICLR 2024 Conference Poster</strong></p>
 </div>
 
 You can access the LaTeX code for this poster [here](https://github.com/deepmancer/rss-training-iclr2024/tree/main/poster).
