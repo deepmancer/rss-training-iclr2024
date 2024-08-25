@@ -53,9 +53,9 @@ The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss fu
 
 ## Main Contributions
 
-We propose a polynomial-time framework that leverages both labeled and slightly out-of-domain unlabeled data. Our framework guarantees improved generalization under the *cluster assumption* of the true data distribution. In the well-studied setting of the two-component Gaussian Mixture Model (GMM) for classification, with \(m\) labeled and \(n\) unlabeled data points, our theoretical findings demonstrate:
+We propose a polynomial-time framework that leverages both labeled and slightly out-of-domain unlabeled data. Our framework guarantees improved generalization under the *cluster assumption* of the true data distribution. In the well-studied setting of the two-component Gaussian Mixture Model (GMM) for classification, with $m$ labeled and $n$ unlabeled data points, our theoretical findings demonstrate:
 
 - **Non-asymptotic bounds** for both robust and non-robust learning.
-- **Enhanced generalization** over ERM techniques when \(n \geq \Omega(m^2/d)\).
+- **Enhanced generalization** over ERM techniques when $n \geq \Omega(m^2/d)$.
 - **Dimension-independent** sample complexity under well-defined conditions.
-- **Improved sample complexity** from \(O(d/\epsilon^2)\) to \(O(d/\epsilon)\) when \(n = O(d/\epsilon^6)\).
+- **Improved sample complexity** from $O(d/\epsilon^2)$ to $O(d/\epsilon)$ when $n = O(d/\epsilon^6)$.
