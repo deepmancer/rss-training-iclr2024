@@ -14,7 +14,8 @@
 > [Babak HosseinKhalaj](https://scholar.google.com/citations?user=8HsoXAUAAAAJ&hl=en)
 <br>**Sharif University of Technology**<br>
 
-Official implementation
+
+Welcome to the official repository for our **ICLR 2024 Spotlight** paper, [**"Out-Of-Domain Unlabeled Data Improves Generalization"**](https://arxiv.org/abs/2310.00027) 🚀.
 
 <details>
     <summary>📝 Abstract</summary>
