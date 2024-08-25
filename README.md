@@ -17,7 +17,7 @@
 Official implementation
 
 <details>
-    <summary>Click for Abstract</summary>
+    <summary>📝 Abstract</summary>
 
 We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
 
