@@ -42,3 +42,19 @@ Our results underscore two significant insights:
 We validate our claims through experiments conducted on a variety of synthetic and real-world datasets.
 
 </details>
+
+
+## Introduction
+
+<table class="center">
+    <tr>
+        <td style="border: none; text-align: center;">
+            <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/images/pipeline.png" alt="Overview of our RSS Training Framework" width="100%">
+        </td>
+    </tr>
+    <tr>
+        <td style="border: none; text-align: center; word-wrap: break-word;">
+            Overview of our RSS Training Framework
+        </td>
+    </tr>
+</table>
