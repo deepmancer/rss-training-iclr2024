@@ -8,20 +8,20 @@
 <details>
     <summary>📜 Click for Abstract</summary>
 
-We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
+We propose a novel framework for incorporating unlabeled data into semi-supervised classification problems, where scenarios involving the minimization of either:
 
 - *i)* adversarially robust, or 
 - *ii)* non-robust loss functions 
 
 have been considered. Notably, we allow the unlabeled samples to deviate slightly (in the total variation sense) from the in-domain distribution. The core idea behind our framework is to combine **Distributionally Robust Optimization (DRO)** with **self-supervised training**. As a result, we also leverage **efficient polynomial-time algorithms** for the training stage.
 
-From a theoretical standpoint, we apply our framework to the classification problem of a **mixture of two Gaussians** in $\mathbb{R}^d$, where, in addition to the $m$ independent and labeled samples from the true distribution, a set of $n$ (usually with $n \gg m$) out-of-domain and unlabeled samples are also provided.
+From a theoretical standpoint, we apply our framework to the classification problem of a mixture of two Gaussians in $\mathbb{R}^d$, where, in addition to the $m$ independent and labeled samples from the true distribution, a set of $n$ (usually with $n \gg m$) out-of-domain and unlabeled samples are also provided.
 
 Using only the labeled data, it is known that the generalization error can be bounded by:
 
 $$\propto \left(\frac{d}{m}\right)^{1/2}.$$
 
-However, using our method on both isotropic and non-isotropic Gaussian mixture models, one can derive a new set of **analytically explicit and non-asymptotic bounds** which show substantial improvement in the generalization error compared to ERM.
+However, using our method on both isotropic and non-isotropic Gaussian mixture models, one can derive a new set of analytically explicit and non-asymptotic bounds which show substantial improvement in the generalization error compared to ERM.
 
 Our results underscore two significant insights:
 
