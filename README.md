@@ -64,9 +64,9 @@ We propose a polynomial-time framework that leverages both labeled and slightly 
 
 ---
 
-# Citation
+## 📚 Citation
 
-```
+```bibtex
 @inproceedings{
 saberi2024outofdomain,
 title={Out-Of-Domain Unlabeled Data Improves Generalization},
@@ -74,6 +74,18 @@ author={seyed amir hossein saberi and Amir Najafi and Alireza Heidari and Mohamm
 booktitle={The Twelfth International Conference on Learning Representations},
 year={2024},
 url={https://openreview.net/forum?id=Bo6GpQ3B9a}
+}
+```
+
+```bibtex
+@misc{saberi2024outofdomainunlabeleddataimproves,
+      title={Out-Of-Domain Unlabeled Data Improves Generalization}, 
+      author={Amir Hossein Saberi and Amir Najafi and Alireza Heidari and Mohammad Hosein Movasaghinia and Abolfazl Motahari and Babak H. Khalaj},
+      year={2024},
+      eprint={2310.00027},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2310.00027}, 
 }
 ```
 
