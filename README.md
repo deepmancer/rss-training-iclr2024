@@ -42,7 +42,8 @@ Our results underscore two significant insights:
 We validate our claims through experiments conducted on a variety of synthetic and real-world datasets.
 
 </details>
-## Method: Robust Self Supervised (RSS) Training
+
+## ✨ Method: Robust Self Supervised (RSS) Training
 
 The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss function by incorporating a robust regularization term. This additional term exclusively leverages out-of-domain unlabeled data, guiding the classifier away from crowded, dense regions to improve overall performance and robustness.
 
@@ -53,7 +54,7 @@ The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss fu
 
 ---
 
-## Main Contributions
+## 💥 Contributions
 
 We propose a polynomial-time framework that leverages both labeled and slightly out-of-domain unlabeled data. Our framework guarantees improved generalization under the *cluster assumption* of the true data distribution. In the well-studied setting of the two-component Gaussian Mixture Model (GMM) for classification, with $m$ labeled and $n$ unlabeled data points, our theoretical findings demonstrate:
 
