@@ -45,9 +45,7 @@ We validate our claims through experiments conducted on a variety of synthetic a
 
 ## Method: Robust Self Supervised (RSS) Training
 
-The **Robust Self-Supervised (RSS) Training framework**  enhances the ERM loss function with a robust regularization term. This extra loss term leverages out-of-domain unlabeled data only, guiding the classifier away from crowded, dense regions to improve overall performance and robustness.
-
-
+The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss function by incorporating a robust regularization term. This additional term exclusively leverages out-of-domain unlabeled data, guiding the classifier away from crowded, dense regions to improve overall performance and robustness.
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deepmancer/rss-training-iclr2024/main/poster/images/pipeline.png" alt="Overview of the RSS Training Framework" style="max-width: 100%;">
