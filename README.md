@@ -14,14 +14,13 @@
 > [Babak HosseinKhalaj](https://scholar.google.com/citations?user=8HsoXAUAAAAJ&hl=en)
 <br>**Sharif University of Technology**<br>
 
-
 🚀 Official repository of our **ICLR 2024 Spotlight** paper, [**"Out-Of-Domain Unlabeled Data Improves Generalization"**](https://arxiv.org/abs/2310.00027).
 
 ## 📝 Abstract
-<details>
-    <summary>Click to expand</summary>
 
-We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
+<details>
+    <summary>
+    We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
 
 - *i)* adversarially robust, or 
 - *ii)* non-robust loss functions 
@@ -42,7 +41,5 @@ Our results underscore two significant insights:
 2. The semi-supervised learning paradigm can be regarded as a special case of our framework when there are no distributional shifts.
 
 We validate our claims through experiments conducted on a variety of synthetic and real-world datasets.
-
-</details>
-
+    </summary>
 </details>
