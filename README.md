@@ -19,8 +19,9 @@
 ## 📝 Abstract
 
 <details>
-    <summary>
-    We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
+    <summary>Click to expand</summary>
+
+We propose a **novel framework** for incorporating **unlabeled data** into semi-supervised classification problems, where scenarios involving the minimization of either:
 
 - *i)* adversarially robust, or 
 - *ii)* non-robust loss functions 
@@ -41,5 +42,5 @@ Our results underscore two significant insights:
 2. The semi-supervised learning paradigm can be regarded as a special case of our framework when there are no distributional shifts.
 
 We validate our claims through experiments conducted on a variety of synthetic and real-world datasets.
-    </summary>
+
 </details>
