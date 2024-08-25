@@ -51,6 +51,8 @@ The **Robust Self-Supervised (RSS) Training framework** enhances the ERM loss fu
   <p><strong>Overview of the RSS Training Framework</strong></p>
 </div>
 
+---
+
 ## Main Contributions
 
 We propose a polynomial-time framework that leverages both labeled and slightly out-of-domain unlabeled data. Our framework guarantees improved generalization under the *cluster assumption* of the true data distribution. In the well-studied setting of the two-component Gaussian Mixture Model (GMM) for classification, with $m$ labeled and $n$ unlabeled data points, our theoretical findings demonstrate:
@@ -59,3 +61,18 @@ We propose a polynomial-time framework that leverages both labeled and slightly 
 - **Enhanced generalization** over ERM techniques when $n \geq \Omega(m^2/d)$.
 - **Dimension-independent** sample complexity under well-defined conditions.
 - **Improved sample complexity** from $O(d/\epsilon^2)$ to $O(d/\epsilon)$ when $n = O(d/\epsilon^6)$.
+
+---
+
+# Citation
+
+```
+@inproceedings{
+saberi2024outofdomain,
+title={Out-Of-Domain Unlabeled Data Improves Generalization},
+author={seyed amir hossein saberi and Amir Najafi and Alireza Heidari and Mohammad Hosein Movasaghinia and Abolfazl Motahari and Babak Khalaj},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=Bo6GpQ3B9a}
+}
+```
