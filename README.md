@@ -87,19 +87,6 @@ year={2024},
 url={https://openreview.net/forum?id=Bo6GpQ3B9a}
 }
 ```
-
-```bibtex
-@misc{saberi2024outofdomainunlabeleddataimproves,
-      title={Out-Of-Domain Unlabeled Data Improves Generalization}, 
-      author={Seyed Amir Hossein Saberi and Amir Najafi and Alireza Heidari and Mohammad Hosein Movasaghinia and Abolfazl Motahari and Babak H. Khalaj},
-      year={2024},
-      eprint={2310.00027},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2310.00027}, 
-}
-```
-
 ---
 
 ## 📝 License
