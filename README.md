@@ -13,7 +13,7 @@ We propose a novel framework for incorporating unlabeled data into semi-supervis
 - *i)* adversarially robust, or 
 - *ii)* non-robust loss functions 
 
-have been considered. Notably, we allow the unlabeled samples to deviate slightly (in the total variation sense) from the in-domain distribution. The core idea behind our framework is to combine **Distributionally Robust Optimization (DRO)** with **self-supervised training**. As a result, we also leverage **efficient polynomial-time algorithms** for the training stage.
+have been considered. Notably, we allow the unlabeled samples to deviate slightly (in the total variation sense) from the in-domain distribution. The core idea behind our framework is to combine **Distributionally Robust Optimization (DRO)** with **Self-Supervised Learning (SSL)**. As a result, we also leverage **efficient polynomial-time algorithms** for the training stage.
 
 From a theoretical standpoint, we apply our framework to the classification problem of a mixture of two Gaussians in $\mathbb{R}^d$, where, in addition to the $m$ independent and labeled samples from the true distribution, a set of $n$ (usually with $n \gg m$) out-of-domain and unlabeled samples are also provided.
 
